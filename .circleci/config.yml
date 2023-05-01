@@ -10,6 +10,8 @@ jobs:
       - node/install-packages
       - run:
           command: npm run test
+    environment:
+      NODE_VERSION: "14.7.0"
 workflows:
   build-and-test:
     jobs:
